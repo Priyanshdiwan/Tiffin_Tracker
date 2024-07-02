@@ -4,7 +4,7 @@ document.getElementById('tiffinForm').addEventListener('submit', function(e) {
     var formData = new FormData(this);
     var data = Object.fromEntries(formData);
     
-    fetch('YOUR_WEB_APP_URL', {
+    fetch('https://script.google.com/macros/s/AKfycby9X-_4fgEZQoWEyUtcdzKlOX-NltfULEppUj5o3ITi-eQiD6d1ASlOYR-TK8iQFEj0YQ/exec', {
         method: 'POST',
         body: JSON.stringify(data)
     })
